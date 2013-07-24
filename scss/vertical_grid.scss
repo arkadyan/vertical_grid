@@ -76,6 +76,10 @@ $verticalGridGutterHeight:  0.36% !default;
         margin-top: 0%;
       }
     }
+
+    [class^=span] {
+      height: 100%;
+    }
   }
 
   // Generate .vertical-spanX
