@@ -18,6 +18,7 @@
   padding-bottom: 0em;
   position: absolute;
   top: 0em;
+  width: 100%;
   *zoom: 1;
 }
 /* line 22, ../scss/vertical_grid.scss */
@@ -30,7 +31,7 @@
 .container-vertical:after {
   clear: both;
 }
-/* line 69, ../scss/vertical_grid.scss */
+/* line 70, ../scss/vertical_grid.scss */
 .container-vertical .row,
 .container-vertical .row-fluid {
   margin-top: 0.36%;
@@ -50,128 +51,128 @@
 .container-vertical .row-fluid:after {
   clear: both;
 }
-/* line 74, ../scss/vertical_grid.scss */
+/* line 75, ../scss/vertical_grid.scss */
 .container-vertical .row:first-of-type,
 .container-vertical .row-fluid:first-of-type {
   margin-top: 0%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span12 {
   height: 99.96%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span11 {
   height: 91.6%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span10 {
   height: 83.24%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span9 {
   height: 74.88%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span8 {
   height: 66.52%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span7 {
   height: 58.16%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span6 {
   height: 49.8%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span5 {
   height: 41.44%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span4 {
   height: 33.08%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span3 {
   height: 24.72%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span2 {
   height: 16.36%;
 }
 
-/* line 83, ../scss/vertical_grid.scss */
+/* line 84, ../scss/vertical_grid.scss */
 .vertical-span1 {
   height: 8%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset12 {
   margin-top: 100.68%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset11 {
   margin-top: 92.32%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset10 {
   margin-top: 83.96%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset9 {
   margin-top: 75.6%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset8 {
   margin-top: 67.24%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset7 {
   margin-top: 58.88%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset6 {
   margin-top: 50.52%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset5 {
   margin-top: 42.16%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset4 {
   margin-top: 33.8%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset3 {
   margin-top: 25.44%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset2 {
   margin-top: 17.08%;
 }
 
-/* line 92, ../scss/vertical_grid.scss */
+/* line 93, ../scss/vertical_grid.scss */
 .vertical-offset1 {
   margin-top: 8.72%;
 }

@@ -63,6 +63,7 @@ $verticalGridGutterHeight:  0.36% !default;
     padding-bottom: 0em;
     position: absolute;
     top: 0em;
+    width: 100%;
     @include ctb-clearfix();
 
     .row,
