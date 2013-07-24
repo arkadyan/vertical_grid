@@ -75,10 +75,14 @@ $verticalGridGutterHeight:  0.36% !default;
       &:first-of-type {
         margin-top: 0%;
       }
-    }
 
-    [class^=span] {
-      height: 100%;
+      &[class*=vertical-span] {
+        margin-left: 0em;
+      }
+
+      [class*=span] {
+        height: 100%;
+      }
     }
   }
 
