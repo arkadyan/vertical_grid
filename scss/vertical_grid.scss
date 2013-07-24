@@ -1,0 +1,105 @@
+/**
+ * VARIABLES
+ */
+
+$verticalGridRows:             12 !default;
+
+// Height percentages given a total of 12 rows.
+$verticalGridRowHeight:     8% !default;
+$verticalGridGutterHeight:  0.36% !default;
+
+
+/**
+ * UTILITY MIXINS
+ */
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+@mixin ctb-clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+/**
+ * VERTICAL GRID MIXINS
+ */
+
+@mixin core-vertical-span(
+  $rows,
+  $rowHeight: $verticalGridRowHeight,
+  $gutterHeight: $verticalGridGutterHeight
+) {
+  height: ($rowHeight * $rows) + ($gutterHeight * ($rows - 1));
+}
+
+@mixin core-vertical-offset(
+  $rows,
+  $rowHeight: $verticalGridRowHeight,
+  $gutterHeight: $verticalGridGutterHeight
+) {
+  margin-top: ($rowHeight * $rows) + ($gutterHeight * ($rows + 1));
+}
+
+@mixin vertical-grid(
+  $rowHeight: $verticalGridRowHeight,
+  $gutterHeight: $verticalGridGutterHeight
+) {
+  .container-vertical {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    position: absolute;
+    top: 0em;
+    @include ctb-clearfix();
+
+    .row,
+    .row-fluid {
+      margin-top: $verticalGridGutterHeight;
+      overflow: hidden;
+      @include ctb-clearfix();
+
+      &:first-of-type {
+        margin-top: 0%;
+      }
+    }
+  }
+
+  // Generate .vertical-spanX
+  $i: $verticalGridRows;
+  @while $i > 0 {
+    .vertical-span#{$i} {
+      @include core-vertical-span($i, $verticalGridRowHeight, $verticalGridGutterHeight);
+    }
+    $i: $i - 1;
+  }
+
+  // Generate .vertical-offsetX
+  $i: $verticalGridRows;
+  @while $i > 0 {
+    .vertical-offset#{$i} {
+      @include core-vertical-offset($i, $verticalGridRowHeight, $verticalGridGutterHeight);
+    }
+    $i: $i - 1;
+  }
+}
+
+
+/**
+ * MAIN STYLES
+ */
+
+// Vertical grid
+@include vertical-grid($verticalGridRowHeight, $verticalGridGutterHeight);
