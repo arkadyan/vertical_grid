@@ -89,7 +89,13 @@ $verticalGridGutterHeight:  0.36% !default;
   // Generate .vertical-spanX
   $i: $verticalGridRows;
   @while $i > 0 {
-    .vertical-span#{$i} {
+    .vertical-span#{$i},
+    .row.vertical-span#{$i},
+    .row-fluid.vertical-span#{$i},
+    .container-vertical .row.vertical-span#{$i},
+    .container-vertical .row-fluid.vertical-span#{$i},
+    .row [class*=span] .vertical-span#{$i},
+    .row-fluid [class*=span] .vertical-span#{$i} {
       @include core-vertical-span($i, $verticalGridRowHeight, $verticalGridGutterHeight);
     }
     $i: $i - 1;
@@ -98,7 +104,13 @@ $verticalGridGutterHeight:  0.36% !default;
   // Generate .vertical-offsetX
   $i: $verticalGridRows;
   @while $i > 0 {
-    .vertical-offset#{$i} {
+    .vertical-offset#{$i},
+    .row.vertical-offset#{$i},
+    .row-fluid.vertical-offset#{$i},
+    .container-vertical .row.vertical-offset#{$i},
+    .container-vertical .row-fluid.vertical-offset#{$i},
+    .row [class*=span] .vertical-offset#{$i},
+    .row-fluid [class*=span] .vertical-offset#{$i} {
       @include core-vertical-offset($i, $verticalGridRowHeight, $verticalGridGutterHeight);
     }
     $i: $i - 1;
