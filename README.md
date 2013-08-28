@@ -1,4 +1,4 @@
-vertical_grid
+Vertical Grid
 =============
 
 A vertical grid css system designed to play nice with Bootstrap.
